@@ -142,8 +142,8 @@ scheduler_events = {
 	# 	"app_marketing.tasks.all"
 	# ],
     "daily": [
-         "app_marketing.app_marketing.cron.generate_cupon_per_dnan.generate_new_cupon",
-         "app_marketing.app_marketing.cron.disable_cupon.change_status_of_coupon"
+#         "app_marketing.app_marketing.cron.generate_cupon_per_dnan.generate_new_cupon",
+#         "app_marketing.app_marketing.cron.disable_cupon.change_status_of_coupon"
     ],
 	# "hourly": [
 	# 	"app_marketing.tasks.hourly"
