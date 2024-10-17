@@ -1,0 +1,94 @@
+{
+ "autoname": "fomat:{brand}-{MM}-{YYYY}",
+ "creation": "2024-06-27 09:57:11.952263",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "brand",
+  "column_break_4",
+  "periodo",
+  "section_break_5",
+  "contenido",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "brand",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Marca",
+   "options": "Brand",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "periodo",
+   "fieldtype": "Link",
+   "label": "Periodo",
+   "options": "Planificador Contenido"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "contenido",
+   "fieldtype": "Table",
+   "label": "Contenido",
+   "options": "Contenido Tabla"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Contenido Posteado",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2024-07-03 10:35:23.338182",
+ "modified_by": "dmelgar@creative-latam.com",
+ "module": "App Marketing",
+ "name": "Contenido Posteado",
+ "owner": "dmelgar@creative-latam.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Analista de\u00a0Procesos",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

@@ -30,7 +30,8 @@ class Cupon(Document):
 			if not existing_docs:
 				try:
 					self.db_set("code", truncated_hash, notify=True)
-					discount = int(truncated_hash, 16) % 20 + 1
+					# discount = int(truncated_hash, 16) % 20 + 1
+					discount = 20
 					self.db_set("discount", discount, notify=True)
 				except Exception as e:
 					frappe.msgprint(f"No se pudo establecer el código promocional: {e}")
@@ -39,3 +40,4 @@ class Cupon(Document):
 				self.generate_promotional_code()
 		else:
 			frappe.msgprint("El documento ya tiene un código promocional.")
+

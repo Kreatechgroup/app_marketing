@@ -1,0 +1,56 @@
+{
+ "creation": "2024-06-27 09:48:10.382922",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "brand",
+  "social_media_metrics",
+  "goals",
+  "results"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "brand",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Marca",
+   "options": "Brand",
+   "reqd": 1
+  },
+  {
+   "fieldname": "social_media_metrics",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "M\u00e9trica",
+   "options": "\nNew Followers\nReach\nEngagement\nPage Visits\nWhatsApp Messages\nMessenger Messages\nInstagram Messages",
+   "reqd": 1
+  },
+  {
+   "fieldname": "goals",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Meta",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "results",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Resultado"
+  }
+ ],
+ "istable": 1,
+ "modified": "2024-06-27 12:47:33.343654",
+ "modified_by": "Administrator",
+ "module": "App Marketing",
+ "name": "Metricas de Contenido Planificado Tabla",
+ "owner": "dmelgar@creative-latam.com",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

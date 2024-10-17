@@ -1,0 +1,47 @@
+{
+ "creation": "2024-06-27 09:46:45.109569",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "social_media",
+  "type_of_content",
+  "link"
+ ],
+ "fields": [
+  {
+   "fieldname": "social_media",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Plataforma",
+   "options": "\nInstagram\nTik Tok\nFacebook\nWeb Page"
+  },
+  {
+   "fieldname": "type_of_content",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Tipo de contenido",
+   "options": "\nPost\nHistoria\nReels"
+  },
+  {
+   "columns": 4,
+   "fieldname": "link",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Link del Contenido"
+  }
+ ],
+ "istable": 1,
+ "modified": "2024-07-05 09:39:10.977213",
+ "modified_by": "dmelgar@creative-latam.com",
+ "module": "App Marketing",
+ "name": "Contenido Tabla",
+ "owner": "dmelgar@creative-latam.com",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

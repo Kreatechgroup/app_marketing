@@ -1,7 +1,6 @@
 {
- "actions": [],
  "allow_rename": 1,
- "autoname": "naming_series:",
+ "autoname": "field:code",
  "creation": "2024-04-03 11:50:01.235904",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -9,12 +8,14 @@
   "section_break_p11s",
   "status",
   "company",
-  "establecimiento",
+  "brand",
+  "doctype_reference",
   "due_date",
   "column_break_ye2o",
   "discount",
   "code",
   "customer",
+  "used",
   "naming_series"
  ],
  "fields": [
@@ -25,19 +26,16 @@
   {
    "fieldname": "status",
    "fieldtype": "Select",
-   "label": "Status"
+   "label": "Status",
+   "options": "Activo\nDeshabilitado",
+   "read_only": 1
   },
   {
    "fieldname": "company",
    "fieldtype": "Link",
    "label": "Company",
-   "options": "Company"
-  },
-  {
-   "fieldname": "establecimiento",
-   "fieldtype": "Link",
-   "label": "Establecimiento",
-   "options": "Establecimiento"
+   "options": "Company",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_ye2o",
@@ -47,7 +45,8 @@
    "fieldname": "code",
    "fieldtype": "Data",
    "label": "Code",
-   "read_only": 1
+   "read_only": 1,
+   "unique": 1
   },
   {
    "fieldname": "due_date",
@@ -72,16 +71,34 @@
   {
    "fieldname": "discount",
    "fieldtype": "Percent",
-   "label": "Discount"
+   "label": "Discount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "brand",
+   "fieldtype": "Link",
+   "label": "Brand",
+   "options": "Brand",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "used",
+   "fieldtype": "Check",
+   "label": "Used"
+  },
+  {
+   "fieldname": "doctype_reference",
+   "fieldtype": "Link",
+   "label": "DocType Reference",
+   "options": "DocType",
+   "read_only": 1
   }
  ],
- "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2024-04-03 12:51:44.142573",
- "modified_by": "Administrator",
+ "modified": "2024-04-19 12:24:33.625890",
+ "modified_by": "dmelgar@creative-latam.com",
  "module": "App Marketing",
  "name": "Cupon",
- "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {
@@ -99,5 +116,6 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "track_seen": 1,
+ "track_views": 1
 }

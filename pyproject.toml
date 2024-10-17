@@ -4,7 +4,7 @@ authors = [
     { name = "Kreatech Group", email = "dmelgar@creative-latam.com"}
 ]
 description = " "
-requires-python = ">=3.10"
+requires-python = " "
 readme = "README.md"
 dynamic = ["version"]
 dependencies = [

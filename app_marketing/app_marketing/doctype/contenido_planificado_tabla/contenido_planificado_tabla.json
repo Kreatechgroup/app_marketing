@@ -1,0 +1,75 @@
+{
+ "creation": "2024-06-27 09:47:29.083678",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "brand",
+  "type_of_content",
+  "social_media",
+  "amount_of_content",
+  "published_content",
+  "view_posted_content"
+ ],
+ "fields": [
+  {
+   "fieldname": "brand",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Marca",
+   "options": "Brand",
+   "reqd": 1
+  },
+  {
+   "fieldname": "type_of_content",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Tipo de contenido",
+   "options": "\nPost\nHistoria\nReels",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "social_media",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Plataforma",
+   "options": "\nInstagram\nTik Tok\nFacebook\nWeb Page",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "amount_of_content",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Cantidad de contenido",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "published_content",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Contenido Publicado",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "view_posted_content",
+   "fieldtype": "Button",
+   "in_list_view": 1,
+   "label": "Ver contenido posteado"
+  }
+ ],
+ "istable": 1,
+ "modified": "2024-07-05 09:39:25.446565",
+ "modified_by": "dmelgar@creative-latam.com",
+ "module": "App Marketing",
+ "name": "Contenido Planificado Tabla",
+ "owner": "dmelgar@creative-latam.com",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

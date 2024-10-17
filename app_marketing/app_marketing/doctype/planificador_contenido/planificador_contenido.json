@@ -1,0 +1,96 @@
+{
+ "autoname": "format:{MM}-{YYYY}-{abbr}",
+ "creation": "2024-06-27 09:49:41.129494",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "abbr",
+  "section_break_4",
+  "content_planner",
+  "m\u00e9tricas_contenido_multimedia",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Compa\u00f1ia",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "company.abbr",
+   "fetch_if_empty": 1,
+   "fieldname": "abbr",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "abbr",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "content_planner",
+   "fieldtype": "Table",
+   "label": "Planificador de contenido",
+   "options": "Contenido Planificado Tabla"
+  },
+  {
+   "fieldname": "m\u00e9tricas_contenido_multimedia",
+   "fieldtype": "Table",
+   "label": "M\u00e9tricas Contenido Multimedia",
+   "options": "Metricas de Contenido Planificado Tabla"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Planificador Contenido",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2024-07-03 10:34:44.947827",
+ "modified_by": "dmelgar@creative-latam.com",
+ "module": "App Marketing",
+ "name": "Planificador Contenido",
+ "owner": "dmelgar@creative-latam.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Analista de\u00a0Procesos",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

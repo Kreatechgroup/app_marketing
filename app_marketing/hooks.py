@@ -133,23 +133,28 @@ app_license = "mit"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"app_marketing.tasks.all"
-# 	],
-# 	"daily": [
-# 		"app_marketing.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"app_marketing.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"app_marketing.tasks.weekly"
-# 	],
-# 	"monthly": [
-# 		"app_marketing.tasks.monthly"
-# 	],
-# }
+scheduler_events = {
+    "cron": {
+		# "0 10 * * 1-5": ["app_marketing.app_marketing.cron.send_promotion_code.send_promotion_code"],
+        # "0 0 * * *": ["app_marketing.app_marketing.cron.disable_cupon.change_status_of_coupon"]
+	},
+	# "all": [
+	# 	"app_marketing.tasks.all"
+	# ],
+    "daily": [
+         "app_marketing.app_marketing.cron.generate_cupon_per_dnan.generate_new_cupon",
+         "app_marketing.app_marketing.cron.disable_cupon.change_status_of_coupon"
+    ],
+	# "hourly": [
+	# 	"app_marketing.tasks.hourly"
+	# ],
+	# "weekly": [
+	# 	"app_marketing.tasks.weekly"
+	# ],
+	# "monthly": [
+	# 	"app_marketing.tasks.monthly"
+	# ],
+}
 
 # Testing
 # -------
@@ -226,4 +231,6 @@ app_license = "mit"
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
+
+
 
